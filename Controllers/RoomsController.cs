@@ -72,7 +72,7 @@ namespace erooms.Controllers
         }
 
 
-        // Delete By Id
+        // updated Delete By Id
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRoom(int id)
         {
