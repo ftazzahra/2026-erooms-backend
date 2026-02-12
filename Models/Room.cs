@@ -2,7 +2,7 @@ namespace erooms.Models
 {
     public class Room
     {
-        //up
+        //updated
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int Capacity { get; set; }
