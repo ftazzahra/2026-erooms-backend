@@ -3,6 +3,7 @@ using erooms.Models;
 
 namespace erooms.Data
 {
+    //up
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
