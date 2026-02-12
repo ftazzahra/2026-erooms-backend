@@ -7,6 +7,7 @@
 namespace erooms.Migrations
 {
     /// <inheritdoc />
+    /// up
     public partial class SeedRooms : Migration
     {
         /// <inheritdoc />

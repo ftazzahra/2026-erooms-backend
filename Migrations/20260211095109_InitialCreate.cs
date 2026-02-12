@@ -4,6 +4,7 @@
 
 namespace erooms.Migrations
 {
+    //up
     /// <inheritdoc />
     public partial class InitialCreate : Migration
     {
