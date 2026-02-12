@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("erooms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba03fe5a05ef0c037348d45be9f7176ac3af151e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+090c74a23304bc6e5cf8ca9c2e87c8b2dd31c8c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("erooms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("erooms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
