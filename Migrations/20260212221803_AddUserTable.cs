@@ -4,10 +4,8 @@
 
 namespace erooms.Migrations
 {
-    /// <inheritdoc />
     public partial class AddUserTable : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(

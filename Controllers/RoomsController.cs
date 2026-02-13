@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using erooms.Data;
 using erooms.Models;
 using erooms.DTOs;
 
 namespace erooms.Controllers
 {
+    //update authorization
     [Route("api/[controller]")]
     [ApiController]
     public class RoomsController : ControllerBase
@@ -18,6 +20,7 @@ namespace erooms.Controllers
         }
 
         // Get
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Room>>> GetRooms()
         {
@@ -37,6 +40,7 @@ namespace erooms.Controllers
         }
 
         // Post    
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<Room>> PostRoom(RoomRequestDto dto)
         {
@@ -53,6 +57,7 @@ namespace erooms.Controllers
         }
 
         // Put By Id
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateRoom(int id, RoomRequestDto dto)
         {
@@ -73,6 +78,7 @@ namespace erooms.Controllers
 
 
         // updated Delete By Id
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRoom(int id)
         {

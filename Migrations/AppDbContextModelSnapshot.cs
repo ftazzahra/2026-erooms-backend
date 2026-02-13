@@ -33,9 +33,8 @@ namespace erooms.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -50,14 +49,14 @@ namespace erooms.Migrations
                         {
                             Id = 1,
                             PasswordHash = "$2a$11$Qdcaxpxif6L2isBfTTflwuiXKhJlLt3ZOKujThIigbklXRSMogCcG",
-                            Role = "Admin",
+                            Role = 1,
                             Username = "admin"
                         },
                         new
                         {
                             Id = 2,
                             PasswordHash = "$2a$11$j8QcO5.Xc3Rea5ERnq5bdewyrufdiDxkYWgn0QWzrfssWvv7nlIWm",
-                            Role = "Mahasiswa",
+                            Role = 0,
                             Username = "12345"
                         });
                 });
