@@ -7,6 +7,7 @@ using erooms.DTOs;
 
 namespace erooms.Controllers
 {
+    //update authorization
     [Route("api/[controller]")]
     [ApiController]
     public class RoomsController : ControllerBase
