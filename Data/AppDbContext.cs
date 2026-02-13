@@ -38,7 +38,7 @@ namespace erooms.Data
                     Id = 2,
                     Username = "12345",
                     PasswordHash = "$2a$11$j8QcO5.Xc3Rea5ERnq5bdewyrufdiDxkYWgn0QWzrfssWvv7nlIWm",  
-                    Role = "Mahasiswa"
+                    Role = "User"
                 }
             );
         }        
