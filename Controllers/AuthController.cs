@@ -6,6 +6,8 @@ using System.Security.Claims;
 using System.Text;
 using erooms.Data;
 using erooms.Models;
+using BCrypt.Net;
+
 
 [ApiController]
 [Route("api/[controller]")]
@@ -20,6 +22,7 @@ public class AuthController : ControllerBase
         _config = config;
     }
 
+    //implement regist 
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
