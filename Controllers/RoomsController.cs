@@ -43,7 +43,9 @@ namespace erooms.Controllers
             var room = new Room
             {
                 Name = dto.Name,
-                Capacity = dto.Capacity
+                Location = dto.Location,          
+                Capacity = dto.Capacity,
+                IsAvailable = dto.IsAvailable     
             };
 
             _context.Rooms.Add(room);
