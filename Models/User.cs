@@ -1,7 +1,14 @@
-public class User
+using System.Collections.Generic;
+
+namespace erooms.Models
 {
-    public int Id { get; set; }
-    public string Username { get; set; } = string.Empty;
-    public string PasswordHash { get; set; } = string.Empty;
-    public string Role { get; set; } = "User";
+    public class User
+    {
+        public int Id { get; set; }
+        public string Username { get; set; } = string.Empty;
+        public string PasswordHash { get; set; } = string.Empty;
+        public string Role { get; set; } = "User";
+
+        public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+    }
 }
