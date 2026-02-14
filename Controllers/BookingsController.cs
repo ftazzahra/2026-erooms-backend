@@ -210,7 +210,7 @@ namespace erooms.Controllers
             });
         }
 
-         // history n tracking u/admin
+         // updated history n tracking u/admin
         [Authorize(Roles = "Admin")]
         [HttpGet("admin/history")]
         public async Task<IActionResult> GetBookingHistory(
