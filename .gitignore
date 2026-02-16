@@ -17,6 +17,7 @@ obj/
 # Environment / Secret
 .env
 appsettings.Development.json
+appsettings.json
 
 # OS files
 .DS_Store
