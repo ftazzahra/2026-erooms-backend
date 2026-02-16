@@ -19,7 +19,7 @@ namespace erooms.Controllers
             _context = context;
         }
 
-        // Create booking for user
+        // create booking for user
         [Authorize(Roles = "User")]
         [HttpPost]
         public async Task<IActionResult> CreateBooking(BookingRequestDto dto)
