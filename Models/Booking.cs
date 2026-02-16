@@ -16,5 +16,8 @@ namespace erooms.Models
         public DateTime? ReturnDate { get; set; }
 
         public string Status { get; set; } = "Pending";
+
+        // add field purpose
+        public string Purpose { get; set; } = string.Empty;
     }
 }
