@@ -2,7 +2,7 @@
 bin/
 obj/
 
-# Visual Studio
+# VSCode
 .vs/
 *.user
 *.suo
