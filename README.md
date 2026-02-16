@@ -142,7 +142,14 @@ erooms/
 
 ## License
 
-This project is distributed under the MIT License.
+This project is licensed under the **MIT License**.
+
+### What this means:
+- **Free to use:** You can use, copy, modify, and distribute this project for personal, commercial, or educational purposes.
+- **No warranty:** The project is provided "as-is". The authors are not responsible for any issues, damages, or losses from using this software.
+- **Include the license:** If you redistribute or modify the project, you must include the original MIT License and copyright notice.
+
+For more details, see the [LICENSE](./LICENSE) file.
 
 ---
 
