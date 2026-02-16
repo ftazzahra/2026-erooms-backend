@@ -1,3 +1,23 @@
+# Build
 bin/
 obj/
+
+# Visual Studio
 .vs/
+*.user
+*.suo
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Environment / Secret
+.env
+appsettings.Development.json
+
+# OS files
+.DS_Store
+Thumbs.db
