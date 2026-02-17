@@ -7,20 +7,23 @@
 namespace erooms.Migrations
 {
     /// <inheritdoc />
-    /// up
-    public partial class SeedRooms : Migration
+    public partial class SeedUsers : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.RenameColumn(
+                name: "NRP",
+                table: "Users",
+                newName: "Username");
+
             migrationBuilder.InsertData(
-                table: "Rooms",
-                columns: new[] { "Id", "Capacity", "IsAvailable", "Location", "Name" },
+                table: "Users",
+                columns: new[] { "Id", "PasswordHash", "Role", "Username" },
                 values: new object[,]
                 {
-                    { 1, 30, true, "Gedung Pasca", "Audit" },
-                    { 2, 15, true, "Gedung D4", "B202" },
-                    { 3, 100, false, "Gedung D3", "HH105" }
+                    { 1, "$2a$11$Qdcaxpxif6L2isBfTTflwuiXKhJlLt3ZOKujThIigbklXRSMogCcG", "Admin", "admin" },
+                    { 2, "$2a$11$j8QcO5.Xc3Rea5ERnq5bdewyrufdiDxkYWgn0QWzrfssWvv7nlIWm", "Mahasiswa", "12345" }
                 });
         }
 
@@ -28,19 +31,19 @@ namespace erooms.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DeleteData(
-                table: "Rooms",
+                table: "Users",
                 keyColumn: "Id",
                 keyValue: 1);
 
             migrationBuilder.DeleteData(
-                table: "Rooms",
+                table: "Users",
                 keyColumn: "Id",
                 keyValue: 2);
 
-            migrationBuilder.DeleteData(
-                table: "Rooms",
-                keyColumn: "Id",
-                keyValue: 3);
+            migrationBuilder.RenameColumn(
+                name: "Username",
+                table: "Users",
+                newName: "NRP");
         }
     }
 }
